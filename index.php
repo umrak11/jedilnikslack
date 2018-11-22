@@ -31,10 +31,11 @@ function slack($message, $channel)
 
 /**
  * 
- * Generate TEXT 
+ * Generate TEXT for SLACK
  * 
  */
 
+//Restavracija 123
 $ponudba = ":knife_fork_plate: *Dnevni jedilnik Restavracija 123* \n";
 for ($i = 0; $i < $ponudbaC; $i++)
 {
@@ -45,7 +46,7 @@ $ponudba .= "- ".$menu->priporocamo[0]->title." *".$menu->priporocamo[0]->price.
 $ponudba .= "- ".$menu->priporocamo[1]->title." *".$menu->priporocamo[1]->price."€*\n\n"; 
 
 
-
+//Piazza
 $pC = piazzaCall()['today'];
 $ponudbaPC = count(piazzaCall()['today']);
 $ponudba .= "\n\n\n :shallow_pan_of_food:*Dnevni jedilnik Piazza.si* \n";
